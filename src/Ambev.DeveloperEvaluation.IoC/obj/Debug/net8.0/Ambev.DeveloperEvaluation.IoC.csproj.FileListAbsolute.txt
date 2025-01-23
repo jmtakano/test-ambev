@@ -1,0 +1,26 @@
+C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.csproj.AssemblyReference.cache
+C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.AssemblyInfoInputs.cache
+C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.AssemblyInfo.cs
+C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.csproj.CoreCompileInputs.cache
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.deps.json
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.dll
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.pdb
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Application.dll
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Common.dll
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Domain.dll
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.ORM.dll
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Domain.pdb
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Application.pdb
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.ORM.pdb
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\bin\Debug\net8.0\Ambev.DeveloperEvaluation.Common.pdb
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.csproj.AssemblyReference.cache
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.AssemblyInfoInputs.cache
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.AssemblyInfo.cs
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.csproj.CoreCompileInputs.cache
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.De.F34954F9.Up2Date
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.dll
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\refint\Ambev.DeveloperEvaluation.IoC.dll
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\Ambev.DeveloperEvaluation.IoC.pdb
+C:\Pessoais\Nova pasta\ambev\template\backend\src\Ambev.DeveloperEvaluation.IoC\obj\Debug\net8.0\ref\Ambev.DeveloperEvaluation.IoC.dll
