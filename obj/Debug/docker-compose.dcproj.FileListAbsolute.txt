@@ -1,3 +1,4 @@
 C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend\bin\Debug\Ambev.DeveloperEvaluation.WebApi.dll
 C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Pessoais\Nova pasta\ambev\template\backend\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\dev\proj\test-ambev\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
