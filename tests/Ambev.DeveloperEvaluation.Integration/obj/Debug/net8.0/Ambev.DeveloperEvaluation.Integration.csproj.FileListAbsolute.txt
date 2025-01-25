@@ -157,8 +157,8 @@ C:\Pessoais\Nova pasta\ambev\template\backend\tests\Ambev.DeveloperEvaluation.In
 C:\Pessoais\Nova pasta\ambev\template\backend\tests\Ambev.DeveloperEvaluation.Integration\obj\Debug\net8.0\ref\Ambev.DeveloperEvaluation.Integration.dll
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Integration\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Ambev.DeveloperEvaluation.Integration
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Integration\bin\Debug\net8.0\CoverletSourceRootsMapping_Ambev.DeveloperEvaluation.Integration
-C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Integration\bin\Debug\net8.0\testhost.exe
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Integration\bin\Debug\net8.0\testhost.dll
+C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Integration\bin\Debug\net8.0\testhost.exe
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Integration\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Integration\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Integration\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll

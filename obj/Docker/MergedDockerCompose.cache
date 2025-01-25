@@ -1,4 +1,4 @@
-name: dockercompose13672441781132230477
+name: dockercompose12966209372442841700
 services:
   ambev.developerevaluation.cache:
     command:
@@ -44,7 +44,7 @@ services:
         protocol: tcp
   ambev.developerevaluation.webapi:
     build:
-      context: C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend
+      context: C:\dev\proj\test-ambev
       dockerfile: src/Ambev.DeveloperEvaluation.WebApi/Dockerfile
     container_name: ambev_developer_evaluation_webapi
     environment:
@@ -76,4 +76,4 @@ services:
           create_host_path: true
 networks:
   default:
-    name: dockercompose13672441781132230477_default
+    name: dockercompose12966209372442841700_default

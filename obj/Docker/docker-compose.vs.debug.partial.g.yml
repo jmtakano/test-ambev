@@ -12,12 +12,13 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_ambev.developerevaluation.webapi$
+      - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
-      - C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend\src\Ambev.DeveloperEvaluation.WebApi:/app:rw
-      - C:\Users\Jonny\OneDrive\Área de Trabalho\Test St\Teste Dev Sr - abi-gth-omnia-developer-evaluation (2) (1) (1)\template\backend:/src:rw
+      - C:\dev\proj\test-ambev\src\Ambev.DeveloperEvaluation.WebApi:/app:rw
+      - C:\dev\proj\test-ambev:/src:rw
       - C:\Users\Jonny\vsdbg\vs2017u5:/remote_debugger:rw
-#$nuget_volume_mapping_ambev.developerevaluation.webapi$
+      - C:\Users\Jonny\.nuget\packages:/.nuget/packages:ro
+      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/.nuget/fallbackpackages:ro
       - C:\Users\Jonny\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
       - C:\Users\Jonny\AppData\Roaming\ASP.NET\Https:/home/app/.aspnet/https:ro
       - C:\Users\Jonny\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
@@ -28,7 +29,7 @@ services:
     entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_ambev.developerevaluation.webapi$ \"/app/bin/Debug/net8.0/Ambev.DeveloperEvaluation.WebApi.dll\""
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages --additionalProbingPath /.nuget/fallbackpackages  \"/app/bin/Debug/net8.0/Ambev.DeveloperEvaluation.WebApi.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
     tty: true

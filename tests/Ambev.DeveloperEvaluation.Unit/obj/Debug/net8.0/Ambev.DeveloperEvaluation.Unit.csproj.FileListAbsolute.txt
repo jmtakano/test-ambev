@@ -232,8 +232,8 @@ C:\Pessoais\Nova pasta\ambev\template\backend\tests\Ambev.DeveloperEvaluation.Un
 C:\Pessoais\Nova pasta\ambev\template\backend\tests\Ambev.DeveloperEvaluation.Unit\obj\Debug\net8.0\ref\Ambev.DeveloperEvaluation.Unit.dll
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Ambev.DeveloperEvaluation.Unit
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\CoverletSourceRootsMapping_Ambev.DeveloperEvaluation.Unit
-C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\testhost.exe
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\testhost.dll
+C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\testhost.exe
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\dev\proj\test-ambev\tests\Ambev.DeveloperEvaluation.Unit\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll

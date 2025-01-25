@@ -26,7 +26,7 @@ namespace Ambev.DeveloperEvaluation.Domain.Repositories
         Task<User> UpdateAsync(Product product, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Retrieves a user by their unique identifier
+        /// Retrieves a product by their unique identifier
         /// </summary>
         /// <param name="id">The unique identifier of the product</param>
         /// <param name="cancellationToken">Cancellation token</param>
@@ -34,17 +34,17 @@ namespace Ambev.DeveloperEvaluation.Domain.Repositories
         Task<User?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Retrieves a user by their email address
+        /// Retrieves a product by their email address
         /// </summary>
         /// <param name="email">The email address to search for</param>
         /// <param name="cancellationToken">Cancellation token</param>
         /// <returns>The user if found, null otherwise</returns>
-        Task<User?> GetByEmailAsync(string email, CancellationToken cancellationToken = default);
+        Task<User?> GetByNameAsync(string name, CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Deletes a user from the repository
+        /// Deletes a product from the repository
         /// </summary>
-        /// <param name="id">The unique identifier of the user to delete</param>
+        /// <param name="id">The unique identifier of the product to delete</param>
         /// <param name="cancellationToken">Cancellation token</param>
         /// <returns>True if the user was deleted, false if not found</returns>
         Task<bool> DeleteAsync(Guid id, CancellationToken cancellationToken = default);
