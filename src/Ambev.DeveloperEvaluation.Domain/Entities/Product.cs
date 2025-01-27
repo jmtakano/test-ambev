@@ -14,8 +14,8 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
         public decimal Price { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }
-        public string Image { get; set; }
-        //public Rating Rating { get; set; }
         public DateTimeOffset CreatedDate { get; set; }
+
+        public virtual List<SaleItem> SalesItems { get; set; }
     }
 }

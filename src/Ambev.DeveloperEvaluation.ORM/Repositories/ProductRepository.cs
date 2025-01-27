@@ -1,6 +1,7 @@
 ﻿using Ambev.DeveloperEvaluation.Common.Security;
 using Ambev.DeveloperEvaluation.Domain.Entities;
 using Ambev.DeveloperEvaluation.Domain.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,19 +37,20 @@ namespace Ambev.DeveloperEvaluation.ORM.Repositories
             return true;
         }
 
-        public Task<Product?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<Product?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _context.Products.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
         }
 
-        public Task<Product?> GetByNameAsync(string name, CancellationToken cancellationToken = default)
+        public async Task<Product?> GetByNameAsync(string name, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _context.Products
+                .FirstOrDefaultAsync(x => x.Title == name, cancellationToken);
         }
 
-        public Task<Product?> ListProductsAsync(int pageIndex, int pageSize, CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<Product?>> ListProductsAsync(int pageIndex, int pageSize, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _context.Products.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync(cancellationToken);
         }
 
         public Task<Product> UpdateAsync(Product product, CancellationToken cancellationToken = default)

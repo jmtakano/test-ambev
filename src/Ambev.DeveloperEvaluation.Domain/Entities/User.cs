@@ -42,7 +42,7 @@ public class User : BaseEntity, IUser
     /// Gets the user's role in the system.
     /// Determines the user's permissions and access levels.
     /// </summary>
-    public UserRole Role { get;     set; }
+    public UserRole Role { get; set; }
 
     /// <summary>
     /// Gets the user's current status.
@@ -85,6 +85,8 @@ public class User : BaseEntity, IUser
     {
         CreatedAt = DateTime.UtcNow;
     }
+
+    public virtual List<Sale> Sales { get; set; }
 
     /// <summary>
     /// Performs validation of the user entity using the UserValidator rules.

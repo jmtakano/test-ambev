@@ -27,5 +27,10 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .HasConversion<string>()
             .HasMaxLength(20);
 
+
+        builder.HasMany(x => x.Sales)
+        .WithOne(x => x.Customer)
+        .HasForeignKey(x => x.CustomerId)
+        .OnDelete(DeleteBehavior.ClientNoAction);
     }
 }

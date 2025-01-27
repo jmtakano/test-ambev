@@ -29,6 +29,7 @@ namespace Ambev.DeveloperEvaluation.Application.Products.CreateProduct
                 throw new InvalidOperationException($"Product with tiitle name {command.Title} already exists");
 
             var product = _mapper.Map<Product>(command);
+            product.CreatedDate = DateTimeOffset.UtcNow;
 
             var createdProduct = await _productRepository.CreateAsync(product, cancellationToken);
             var result = _mapper.Map<CreateProductResult>(createdProduct);

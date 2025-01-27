@@ -21,6 +21,11 @@ namespace Ambev.DeveloperEvaluation.ORM.Mapping
             builder.Property(x => x.Price).IsRequired();
             builder.Property(x => x.Category).IsRequired();
             builder.Property(x => x.CreatedDate).IsRequired();
+
+            builder.HasMany(x => x.SalesItems)
+            .WithOne(x => x.Product)
+            .HasForeignKey(x => x.ProductId)
+            .OnDelete(DeleteBehavior.ClientNoAction);
         }
     }
 }

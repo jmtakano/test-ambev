@@ -35,21 +35,21 @@ namespace Ambev.DeveloperEvaluation.WebApi.Features.Products
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetPaginatedProducts([FromQuery] int pageIndex, CancellationToken cancellationToken)
         {
-            int pageSize = 10;
-            var request = new GetProductRequest {  };
-            var validator = new GetProductRequestValidator();
+            int pageSize = 2;
+            var request = new ListProductRequest { PageIndex = pageIndex, PageSize = pageSize };
+            var validator = new ListProductRequestValidator();
             var validationResult = await validator.ValidateAsync(request, cancellationToken);
 
             if (!validationResult.IsValid)
                 return BadRequest(validationResult.Errors);
-
-            var command = _mapper.Map<ListProductCommand>(request.Id);
+            var command = _mapper.Map<ListProductCommand>(request);
             var response = await _mediator.Send(command, cancellationToken);
 
             return Ok(new PaginatedResponse<ListProductResponse>
             {
+                CurrentPage = pageIndex,
                 Success = true,
-                Message = "User retrieved successfully",
+                Message = "Product retrieved successfully",
                 Data = _mapper.Map<IEnumerable<ListProductResponse>>(response)
             });
         }

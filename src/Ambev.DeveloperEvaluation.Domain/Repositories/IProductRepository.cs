@@ -48,7 +48,7 @@ namespace Ambev.DeveloperEvaluation.Domain.Repositories
         /// <param name="pageSize">The page size number</param>
         /// <param name="cancellationToken">Cancellation token</param>
         /// <returns>The product if found, empty list otherwise</returns>
-        Task<Product?> ListProductsAsync (int pageIndex, int pageSize, CancellationToken cancellationToken = default);
+        Task<IEnumerable<Product?>> ListProductsAsync (int pageIndex, int pageSize, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Deletes a product from the repository
