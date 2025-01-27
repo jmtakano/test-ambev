@@ -43,6 +43,17 @@ namespace Ambev.DeveloperEvaluation.Domain.Entities
             return 0m; 
         }
 
+        public void UpdateSale(string branch, List<SaleItem> salesItems)
+        {
+            Branch = branch;
+            SalesItems = salesItems; 
+        }
+
+        public void SaleCancelled(bool saleCancelled)
+        {
+            IsCancelled = saleCancelled;
+        }
+
         public void MarkAsCreated()
         {
             Events.Add(new SaleCreatedEvent(Id, SaleNumber, TotalAmount));

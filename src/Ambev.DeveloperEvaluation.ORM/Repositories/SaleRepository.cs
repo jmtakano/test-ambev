@@ -55,7 +55,7 @@ namespace Ambev.DeveloperEvaluation.ORM.Repositories
 
         public async Task<Sale?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
         {
-            return await _context.Sales.FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+            return await _context.Sales.Include(x => x.SalesItems).FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
         }
 
         public Task<Sale?> GetByNameAsync(string name, CancellationToken cancellationToken = default)
@@ -70,7 +70,29 @@ namespace Ambev.DeveloperEvaluation.ORM.Repositories
 
         public async Task<Sale> UpdateAsync(Sale sale, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            // Remove todos os itens associados à venda
+            var existingItems = await _context.SaleItems
+                .Where(si => si.SaleId == sale.Id)
+                .ToListAsync(cancellationToken);
+
+            _context.SaleItems.RemoveRange(existingItems);
+
+            // Adiciona os novos itens
+            foreach (var item in sale.SalesItems)
+            {
+                await _context.SaleItems.AddAsync(item, cancellationToken);
+            }
+
+            _context.Sales.Update(sale);
+            await _context.SaveChangesAsync(cancellationToken);
+
+            foreach (var domainEvent in sale.Events)
+            {
+                _logger.LogInformation("Event published: {Event}", domainEvent.GetType().Name);
+                // Message broker -> _broker.Publish("topic name", domainEvent)....
+            }
+
+            return sale;
         }
 
         public async Task<bool> ExistUser(Guid userId, CancellationToken cancellationToken = default)

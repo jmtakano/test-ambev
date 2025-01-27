@@ -203,6 +203,41 @@
   },
   {
     "ContainingType": "Ambev.DeveloperEvaluation.WebApi.Features.Sales.SaleController",
+    "Method": "UpdateSale",
+    "RelativePath": "api/Sale",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Features.Sales.UpdateSale.UpdateSaleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponseWithData\u00601[[Ambev.DeveloperEvaluation.WebApi.Features.Sales.UpdateSale.UpdateSaleResponse, Ambev.DeveloperEvaluation.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Ambev.DeveloperEvaluation.WebApi.Common.ApiResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "Ambev.DeveloperEvaluation.WebApi.Features.Sales.SaleController",
     "Method": "GetSale",
     "RelativePath": "api/Sale/{id}",
     "HttpMethod": "GET",
